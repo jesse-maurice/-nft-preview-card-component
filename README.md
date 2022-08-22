@@ -2,6 +2,9 @@
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
 
+![Screenshot 2022-08-22 004514](https://user-images.githubusercontent.com/107750683/185816891-eb570810-771b-4524-a295-82d5b291f0ca.png)
+![Web capture_22-8-2022_04335_127 0 0 1](https://user-images.githubusercontent.com/107750683/185816893-6bf35f1b-5d4b-4b25-a5ca-a7e3900d67c0.jpeg)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
