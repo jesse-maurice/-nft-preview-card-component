@@ -1,0 +1,180 @@
+/* */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%, 60%);
+  padding: 1.25rem;
+}
+
+.container {
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.container .main-image {
+  position: relative;
+}
+
+.container .main-image div {
+  position: absolute;
+  top: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: calc(100% - 4px);
+  z-index: 999;
+  opacity: 0;
+  border-radius: 1.5rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container .main-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container .main-image div img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container article:first-child img:hover {
+  cursor: pointer;
+  background-color: var(--cyan);
+}
+
+.container h1 {
+  font-size: 2rem;
+  color: var(--White);
+  margin: 2rem 0.5rem 1.5rem 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container h1:hover {
+  color: var(--cyan);
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container ul li img {
+  margin-right: 0.5rem;
+}
+
+hr {
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+article:first-child img {
+  border-radius: 1.25rem;
+  padding: 0.1rem;
+}
+
+article:last-child img {
+  border-radius: 50px;
+}
+
+.container .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container .avatar p span {
+  color: var(--White);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.container p span:hover {
+  color: var(--cyan);
+}
+
+p {
+  font-weight: 300;
+  font-size: 2rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.days {
+  color: hsl(215, 51%, 70%);
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+}
+
+.container article:last-child img {
+  max-width: 10%;
+  max-height: 10%;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+}
+
+.container article:last-child p {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 450px;
+    margin: 0 auto 1rem;
+  }
+}
